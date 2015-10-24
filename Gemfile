@@ -34,6 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+	# 'sqlite3' is the rehearsal display
 	gem 'sqlite3'
   gem 'byebug'
 
@@ -45,6 +46,7 @@ group :development, :test do
 end
 
 group :production do
+	#'pg' is the actual performance in Heroku
 	gem 'pg'
 	gem 'rails_12factor'
 end
